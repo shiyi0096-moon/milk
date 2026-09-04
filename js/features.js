@@ -186,7 +186,16 @@
 
 (function() {
     var KEY = 'keepaliveAudioEnabled';
-    var SRC = 'https://raw.gitmirror.com/anars/blank-audio/master/1-second-of-silence.mp3';
+    var SRC =function _createAudio() {
+    if (_audio) return _audio;
+
+    _audio = new Audio('https://raw.gitmirror.com/anars/blank-audio/master/1-second-of-silence.mp3');
+    _audio.loop = true;
+    _audio.volume = 0.01;
+    _audio.preload = 'auto';
+
+    return _audio;
+}
     var _audio = null;
     var _unlockBound = false;
 
