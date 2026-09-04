@@ -186,7 +186,7 @@
 
 (function() {
     var KEY = 'keepaliveAudioEnabled';
-    var SRC = 'silent3.mp3';
+    var SRC = 'https://cdn.jsdelivr.net/gh/anars/blank-audio@master/1-second-of-silence.mp3';
     var _audio = null;
     var _unlockBound = false;
 
