@@ -186,7 +186,7 @@
 
 (function() {
     var KEY = 'keepaliveAudioEnabled';
-    var SRC = 'silent3.m4a';
+    var SRC = 'silent3.mp3';
     var _audio = null;
     var _unlockBound = false;
 
